@@ -4,30 +4,30 @@
     box-sizing: border-box;
 }
 
-.main-nav {
-    margin-top: 20px;
-    margin-right: 20px;
+nav ul {
+    padding-top: 20px;
+    padding-right: 20px;
     list-style: none;
     float: right;
 }
 
-.main-nav li {
-    display: inline;
-    font-weight: 200;
+.section-about {
+    clear: both;
 }
 
-.main-nav li a {
-    color: #545454;
+nav ul li {
     display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #545454;
     font-weight: 600;
     padding: 10px;
     border: 1px solid transparent;
 }
 
-.main-nav li a:hover {
+nav li a:hover {
     border-color: #545454;
 }
 
-a {
-    text-decoration: none;
-}
