@@ -31,3 +31,26 @@ nav li a:hover {
     border-color: #545454;
 }
 
+.section-portfolio {
+    padding-top: 20px;
+}
+
+.portfolio-showcase {
+    height: 300px;
+    width: 300px;
+    border: 1px solid #545454;
+    display: inline-block
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Border around nav li overlaps the about section. I could solve this
+with padding in the about section but not sure if this is the best way  */
+
+/* unsure of the best way to space out the boxes in the portfolio-showcase section */
+
+/* used rows for now to help styling - took it from a previous course, not sure what max-width is doing,
+if I remove it, everything shifts to the left, not sure why */
