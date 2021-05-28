@@ -4,15 +4,41 @@
     box-sizing: border-box;
 }
 
-nav ul {
-    padding-top: 20px;
-    padding-right: 20px;
-    list-style: none;
+nav {
+    background-color: #810000;
+    color: white;
+    height: 50px;
+}
+
+nav h1 {
+    display: none;
+}
+
+.hamburger-icon {
+    /* display: inline; */
+    padding: 10px 8px;
+    color: white;
     float: right;
+    font-size: 25px;
+}
+
+nav ul {
+    display: none;
+}
+
+.section-portfolio .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.important {
+    /* color: red; */
+    font-size: 24px;
 }
 
 .section-about {
-    clear: both;
+    display: none;
+    padding-top: 20px;
 }
 
 nav ul li {
@@ -21,14 +47,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #545454;
+    /* color: #545454; */
+    color: white;
     font-weight: 600;
     padding: 10px;
     border: 1px solid transparent;
 }
 
 nav li a:hover {
-    border-color: #545454;
+    /* border-color: #545454; */
+    border-color: white;
 }
 
 .section-portfolio {
@@ -45,6 +73,41 @@ nav li a:hover {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+@media(min-width: 500px) {
+    .section-about {
+        display: block;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    nav h1 {
+        display: block;
+        float: left;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: block;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        list-style: none;
+        float: right;
+    }
+
+    nav:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
 }
 
 /* Border around nav li overlaps the about section. I could solve this
