@@ -116,6 +116,34 @@ if I remove it, everything shifts to the left, not sure why */
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+#navbar {
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#navbar h1 {
+    padding-top: 15px;
+    font-weight: 300;
+}
+
+#navbar .navLinks {
+    display: flex;
+    list-style: none;
+}
+
+#navbar .myLink {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color:#555;
+}
+
 #hero {
     /* background: url(/images/bc.jpg) no-repeat center center/cover; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/bc.jpg);
@@ -132,6 +160,8 @@ if I remove it, everything shifts to the left, not sure why */
 
 #hero h1 {
     padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 40px;
 }
 
 .container {
