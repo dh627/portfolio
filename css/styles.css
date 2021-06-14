@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ nav li a:hover {
     .hamburger-icon {
         display: none;
     }
-}
+} */
 
 /* Border around nav li overlaps the about section. I could solve this
 with padding in the about section but not sure if this is the best way  */
@@ -109,3 +109,34 @@ with padding in the about section but not sure if this is the best way  */
 
 /* used rows for now to help styling - took it from a previous course, not sure what max-width is doing,
 if I remove it, everything shifts to the left, not sure why */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    /* background: url(/images/bc.jpg) no-repeat center center/cover; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/bc.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+#hero .hero-content {
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+}
+
+#hero h1 {
+    padding-bottom: 20px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+  }
