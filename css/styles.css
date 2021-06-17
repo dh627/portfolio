@@ -193,6 +193,7 @@ hr {
     font-size: 20px;
     font-weight: 300;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .about-text h3 {
@@ -252,10 +253,24 @@ hr {
     padding-left: 40px;
 }
 
-.portfolio h3 {
+.portfolio h2 {
     color: #DA7F8F;
     padding-top: 20px;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
+}
+
+.showcase {
+    padding-top: 40px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.showcase-item {
+    display: inline-block;
+    border: 1px solid grey;
+    height: 200px;
+    width: 200px;
+    margin-right: 40px;
 }
