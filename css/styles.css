@@ -1,115 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-nav {
-    background-color: #810000;
-    color: white;
-    height: 50px;
-}
-
-nav h1 {
-    display: none;
-}
-
-nav ul {
-    display: none;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav .myLink {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    padding: 10px;
-    border: 1px solid transparent;
-}
-
-nav li a:hover {
-    border-color: white;
-}
-
-.hamburger-icon {
-    padding: 10px 8px;
-    color: white;
-    float: right;
-    font-size: 25px;
-}
-
-.section-portfolio .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section-about {
-    display: none;
-    padding-top: 20px;
-}
-
-.section-portfolio {
-    padding-top: 20px;
-}
-
-.portfolio-showcase {
-    height: 300px;
-    width: 300px;
-    border: 1px solid #545454;
-    display: inline-block
-}
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-@media(min-width: 500px) {
-    .section-about {
-        display: block;
-    }
-
-    nav {
-        height: 60px;
-    }
-
-    nav h1 {
-        display: block;
-        float: left;
-        padding: 15px;
-    }
-
-    nav ul {
-        display: block;
-        padding-top: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        list-style: none;
-        float: right;
-    }
-
-    nav:after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-} */
-
-/* Border around nav li overlaps the about section. I could solve this
-with padding in the about section but not sure if this is the best way  */
-
-/* unsure of the best way to space out the boxes in the portfolio-showcase section */
-
-/* used rows for now to help styling - took it from a previous course, not sure what max-width is doing,
-if I remove it, everything shifts to the left, not sure why */
-
 * {
     margin: 0;
     padding: 0;
@@ -261,16 +149,67 @@ hr {
     text-align: center;
 }
 
-.showcase {
+/* .showcase {
     padding-top: 40px;
     width: 45%;
     margin: 0 auto;
+} */
+
+.showcase-flex-container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.showcase-flex-container a {
+    background: #f4f4f4;
+    border: #ccc solid 2px;
+    margin: 20px;
+    /* padding: 10px; */
+    text-align: center;
+    border-radius: 10px;
+    width: 29%;
+    /* height: 300px; */
+    text-decoration: none;
+    color: #555;
 }
 
 .showcase-item {
-    display: inline-block;
-    border: 1px solid grey;
-    height: 200px;
-    width: 200px;
-    margin-right: 40px;
+    height: 350px;
+}
+
+.item-1 {
+    background-image: url(../images/habit-tracker.png);
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.item-1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/habit-tracker.png);
+}
+
+.item-2 {
+    background-image: url(../images/portfolio2.png);
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.item-2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/portfolio2.png);
+}
+
+.item-3 {
+    background-image: url(../images/cryptocurrency.png);
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.item-3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cryptocurrency.png);
 }
