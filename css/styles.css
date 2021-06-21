@@ -191,6 +191,7 @@ hr {
 }
 
 .portfolio-overlay:hover {
+    align-content: center;
     display: block;
     background-color: #555;
     opacity: 0.5;
