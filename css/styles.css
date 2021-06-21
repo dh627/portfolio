@@ -156,7 +156,7 @@ hr {
 } */
 
 .showcase-flex-container {
-    width: 80%;
+    width: 75%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -177,39 +177,32 @@ hr {
     color: #555;
 }
 
-.showcase-item {
-    height: 350px;
-}
-
-.item-1 {
-    background-image: url(../images/habit-tracker.png);
-    background-position: center;
-    background-size: 100% 100%;
-    border-radius: 10px;
+.portfolio-img {
+    width: 100%;
+    padding: 15px;
 }
 
 .item-1:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/habit-tracker.png);
 }
 
-.item-2 {
-    background-image: url(../images/portfolio2.png);
-    background-position: center;
-    background-size: 100% 100%;
-    border-radius: 10px;
-}
-
 .item-2:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/portfolio2.png);
-}
-
-.item-3 {
-    background-image: url(../images/cryptocurrency.png);
-    background-position: center;
-    background-size: 100% 100%;
-    border-radius: 10px;
 }
 
 .item-3:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cryptocurrency.png);
 }
+
+/* questions
+
+- Are my flex items too big? They stand out a bit too much & images are too zoomed in...
+should I add padding around them?
+
+- Not sure if this is the best way of doing the gradient
+
+- My flex item css is very inefficient/not very elegant & lots of repeated code.
+  Not sure how to do the gradient on hover whilst maintaining the image & not having to
+  specify it again.
+
+*/
