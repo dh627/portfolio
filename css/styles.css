@@ -70,6 +70,11 @@ body {
     height: 500px;
 }
 
+#footer {
+    height: 100px;
+    background-color: #47597E;
+}
+
 hr {
     border: 1px solid#DA7F8F;
     margin: 0 auto;
@@ -141,7 +146,7 @@ hr {
     padding-left: 40px;
 }
 
-.portfolio h2 {
+#portfolio h2 {
     color: #DA7F8F;
     padding-top: 20px;
     font-size: 20px;
@@ -188,6 +193,7 @@ hr {
     display: hidden;
     top: 0px;
     border-radius: 8px;
+    transition: all 0.9s ease-in-out;
 }
 
 .portfolio-overlay:hover {
