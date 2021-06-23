@@ -81,6 +81,10 @@ hr {
     width: 15%;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .about-text h2 {
     color: #DA7F8F;
     font-size: 20px;
@@ -161,7 +165,7 @@ hr {
 } */
 
 .showcase-flex-container {
-    width: 75%;
+    width: 80%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -215,6 +219,62 @@ hr {
 .item-3:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cryptocurrency.png);
 }
+
+
+/* Media Queries */
+
+/* Smartphones */
+@media(max-width: 500px) {
+    #navbar .navLinks {
+        display: none;
+    }
+
+    #navbar h1 {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+        text-align: right;
+    }
+
+    .burger-menu {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+    }
+
+    #hero .hero-content {
+        padding-top: 90px;
+    }
+
+    .showcase-flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
+    .showcase-flex-container a {
+        width: 65%;
+    }
+}
+
+/* Flex container */
+@media(min-width: 768px) and (max-width: 1153px) {
+    .showcase-flex-container {
+        width: 100%;
+    }
+
+    .showcase-flex-container a {
+        width: 20%;
+    }
+}
+
 
 /* questions
 
