@@ -204,7 +204,6 @@ hr {
     display: block;
     background-color: #555;
     opacity: 0.5;
-    transition: background-color 0.9s;
 }
 
 .item-1:hover {
@@ -273,6 +272,10 @@ hr {
         width: 20%;
     }
 }
+
+/* Should potentially plan out my media queries a bit better...maybe handwrite some stuff. Also
+be careful to not reuse code, and understand what code you don't need to write again...maybe redo the entire css sheet?
+Watch how brad does the hotel website to make it responsive? */
 
 
 /* questions
