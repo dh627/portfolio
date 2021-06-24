@@ -25,10 +25,6 @@ body {
     list-style: none;
 }
 
-/* #navbar li {
-    margin-left: 40px;
-} */
-
 #navbar .myLink {
     display: inline-block;
     padding: 15px;
@@ -157,18 +153,11 @@ hr {
     text-align: center;
 }
 
-/* .showcase {
-    padding-top: 40px;
-    width: 45%;
-    margin: 0 auto;
-} */
-
 .showcase-flex-container {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    /* text-align: center; */
     justify-content: center;
 }
 
@@ -178,7 +167,7 @@ hr {
     margin: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 29%;
+    width: 25%;
     text-decoration: none;
     color: #555;
     position: relative;
@@ -205,88 +194,3 @@ hr {
     background-color: #555;
     opacity: 0.5;
 }
-
-.item-1:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/habit-tracker.png);
-}
-
-.item-2:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/portfolio2.png);
-}
-
-.item-3:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/cryptocurrency.png);
-}
-
-
-/* Media Queries */
-
-/* Smartphones */
-@media(max-width: 500px) {
-    #navbar .navLinks {
-        display: none;
-    }
-
-    #navbar h1 {
-        display: none;
-    }
-
-    #navbar {
-        display: block;
-        text-align: right;
-    }
-
-    .burger-menu {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-    }
-
-    .burger-menu:hover {
-        cursor: pointer;
-    }
-
-    #hero .hero-content {
-        padding-top: 90px;
-    }
-
-    .showcase-flex-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-content: center;
-    }
-
-    .showcase-flex-container a {
-        width: 65%;
-    }
-}
-
-/* Flex container */
-@media(min-width: 768px) and (max-width: 1153px) {
-    .showcase-flex-container {
-        width: 100%;
-    }
-
-    .showcase-flex-container a {
-        width: 20%;
-    }
-}
-
-/* Should potentially plan out my media queries a bit better...maybe handwrite some stuff. Also
-be careful to not reuse code, and understand what code you don't need to write again...maybe redo the entire css sheet?
-Watch how brad does the hotel website to make it responsive? */
-
-
-/* questions
-
-- Are my flex items too big? They stand out a bit too much & images are too zoomed in...
-should I add padding around them?
-
-- Not sure if this is the best way of doing the gradient
-
-- My flex item css is very inefficient/not very elegant & lots of repeated code.
-  Not sure how to do the gradient on hover whilst maintaining the image & not having to
-  specify it again.
-
-*/

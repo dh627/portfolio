@@ -1,0 +1,44 @@
+
+@media(max-width: 533px) {
+    #navbar .navLinks {
+        display: none;
+    }
+
+    #navbar h1 {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+        text-align: right;
+    }
+
+    .burger-menu {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+    }
+
+    #hero .hero-content {
+        padding-top: 90px;
+    }
+
+    .experience {
+        display: none;
+    }
+
+    .showcase-flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
+    .showcase-flex-container a {
+        width: 70%;
+    }
+}
