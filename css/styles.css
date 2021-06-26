@@ -194,3 +194,14 @@ hr {
     background-color: #555;
     opacity: 0.5;
 }
+
+
+/* To do:
+1. About Me section - have a paragraph about myself, with img to the right
+2. Sort out media query for About Me section - have the text and then img below or above the text. Perhaps have
+the technologies you list a different colour to the rest - e.g. orange or something.
+3. Footer
+4. Contact? Perhaps just have icons in your footer, see milner's website. Have email, git, linkedin.
+5. Hamburger icon
+5. Tidyup/Refactor html & css
+*/
