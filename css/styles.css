@@ -8,6 +8,24 @@ body {
     font-family: 'Lato', 'Arial', sans-serif;
 }
 
+hr {
+    border: 1px solid#DA7F8F;
+    margin: 0 auto;
+    width: 15%;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/**** Navigation ****/
 #navbar {
     color: #555;
     display: flex;
@@ -37,17 +55,12 @@ body {
     border-bottom: 2px solid #555;
 }
 
+/**** Hero ****/
 #hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bc.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
-}
-
-#hero .hero-content {
-    text-align: center;
-    color: #fff;
-    padding-top: 170px;
 }
 
 #hero h1 {
@@ -56,52 +69,40 @@ body {
     font-size: 40px;
 }
 
+#hero .hero-content {
+    text-align: center;
+    color: #fff;
+    padding-top: 170px;
+}
+
+
+/**** About ****/
 #about {
     background-color: #E1E5EA;
     padding: 20px 0;
 }
 
-#portfolio {
-    background-color: #E1E5EA;
-}
 
-#footer {
-    height: 100px;
-    background-color: #47597E;
-}
-
-hr {
-    border: 1px solid#DA7F8F;
-    margin: 0 auto;
-    width: 15%;
-}
-
-.burger-menu {
-    display: none;
+.about-text {
+    text-align: center;
 }
 
 .about-text h2 {
-    color: #DA7F8F;
-    font-size: 20px;
-    font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
 }
 
 .about-text h3 {
-    color: #DA7F8F;
-    font-size: 20px;
-    font-weight: 300;
     width: 120px;
     padding-bottom: 5px;
     border-bottom: 1px solid #DA7F8F;
     text-align: left;
 }
 
-.about-text {
-    /* width: 50%; */
-    /* margin: 0 auto; */
-    text-align: center;
+.about-text h2, h3 {
+    color: #DA7F8F;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .about-text ul {
@@ -110,19 +111,10 @@ hr {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 50px;
-    /* margin-top: 20px;
-    margin-left: 20px; */
 }
 
 .about-text ul li {
     line-height: 145%;
-}
-
-.container {
-    margin: auto;
-    max-width: 1100px;
-    overflow: auto;
-    padding: 0 20px;
 }
 
 .dan-img {
@@ -137,12 +129,17 @@ hr {
     left: 22px;
 }
 
+.experience {
+    padding-left: 40px;
+}
+
 .experience, .skills {
     display: inline-block;
 }
 
-.experience {
-    padding-left: 40px;
+/**** Portfolio ****/
+#portfolio {
+    background-color: #E1E5EA;
 }
 
 #portfolio h2 {
@@ -161,13 +158,14 @@ hr {
     justify-content: center;
 }
 
-.showcase-flex-container a {
+.portfolio-container {
     background: #f4f4f4;
     border: #ccc solid 2px;
     margin: 20px;
     text-align: center;
     border-radius: 10px;
     width: 25%;
+    max-width: 235px;
     text-decoration: none;
     color: #555;
     position: relative;
@@ -193,6 +191,44 @@ hr {
     display: block;
     background-color: #555;
     opacity: 0.5;
+}
+
+/**** Footer ****/
+#footer {
+    background-color: #47597E;
+    padding: 20px 0;
+}
+
+#footer ul {
+    list-style: none;
+    padding-bottom: 30px;
+}
+
+#footer a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+#footer i {
+    color: white;
+    font-size: 25px;
+}
+
+#footer div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer div ul,
+#footer div p {
+    width: 100%;
+    display: inline-block;
+}
+
+#footer ul li {
+    display: inline-block;
 }
 
 
