@@ -11,7 +11,7 @@ body {
 hr {
     border: 1px solid#DA7F8F;
     margin: 0 auto;
-    width: 15%;
+    width: 10%;
 }
 
 .burger-menu {
@@ -23,6 +23,12 @@ hr {
     max-width: 1100px;
     overflow: auto;
     padding: 0 20px;
+}
+
+h2, h3 {
+    color: #DA7F8F;
+    font-size: 1.5rem;
+    font-weight: 50;
 }
 
 /**** Navigation ****/
@@ -75,66 +81,40 @@ hr {
     padding-top: 170px;
 }
 
-
 /**** About ****/
 #about {
     background-color: #E1E5EA;
-    padding: 20px 0;
-}
-
-
-.about-text {
-    text-align: center;
+    padding: 80px 0;
 }
 
 .about-text h2 {
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.about-text h3 {
-    width: 120px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #DA7F8F;
-    text-align: left;
+.about-text {
+    padding-bottom: 80px;
 }
 
-.about-text h2, h3 {
-    color: #DA7F8F;
-    font-size: 20px;
-    font-weight: 300;
+.about-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.about-text ul {
-    color: #DA7F8F;
-    list-style: none;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 50px;
+.about-container p {
+    margin-top: 60px;
+    line-height: 1.8;
+    color: #555;
+    width: 40%;
 }
 
-.about-text ul li {
-    line-height: 145%;
-}
-
-.dan-img {
-    padding-top: -20px;
+.flex-dan-img {
+    margin-top: 30px;
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 20px;
-    position: relative;
-    top: -45px;
-    left: 22px;
-}
-
-.experience {
-    padding-left: 40px;
-}
-
-.experience, .skills {
-    display: inline-block;
+    margin-right: 30px;
+    border: 2px solid #DA7F8F;
 }
 
 /**** Portfolio ****/
@@ -144,9 +124,9 @@ hr {
 
 #portfolio h2 {
     color: #DA7F8F;
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 300;
+    padding: 40px 0 20px 0;
+    /* font-size: 20px;
+    font-weight: 300; */
     text-align: center;
 }
 
@@ -234,10 +214,11 @@ hr {
 
 /* To do:
 1. About Me section - have a paragraph about myself, with img to the right
-2. Sort out media query for About Me section - have the text and then img below or above the text. Perhaps have
+2. Ensure spacing/padding/margin in about section is consistent
+3. Sort out media query for About Me section - have the text and then img below or above the text. Perhaps have
 the technologies you list a different colour to the rest - e.g. orange or something.
-3. Footer
-4. Contact? Perhaps just have icons in your footer, see milner's website. Have email, git, linkedin.
-5. Hamburger icon
-5. Tidyup/Refactor html & css
+4. Footer
+5. Contact? Perhaps just have icons in your footer, see milner's website. Have email, git, linkedin.
+6. Hamburger icon
+7. Tidyup/Refactor html & css
 */
