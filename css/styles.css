@@ -14,7 +14,7 @@ hr {
     width: 10%;
 }
 
-a, a .burger-menu {
+.burger-link, .burger-menu {
     display: none;
 }
 
