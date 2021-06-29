@@ -1,4 +1,8 @@
 @media(max-width: 533px) {
+    hr {
+        width: 40%;
+    }
+
     #navbar .navLinks {
         display: none;
     }
@@ -25,9 +29,27 @@
     #hero .hero-content {
         padding-top: 90px;
     }
-
+/*
     .experience {
         display: none;
+    } */
+
+    .flex-dan-img {
+        margin-right: 0px;
+    }
+
+    .about-container p {
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .about-text {
+        padding-bottom: 50px;
+    }
+
+    .portfolio-container {
+        max-width: 300px;
+        text-align: center;
     }
 
     .showcase-flex-container {

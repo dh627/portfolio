@@ -84,7 +84,7 @@ h2, h3 {
 /**** About ****/
 #about {
     background-color: #E1E5EA;
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .about-text h2 {
@@ -92,13 +92,14 @@ h2, h3 {
 }
 
 .about-text {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
 .about-container {
-    padding-top: 30px;
+    /* padding-top: 10px; */
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-container p {
@@ -106,6 +107,7 @@ h2, h3 {
     line-height: 1.8;
     color: #555;
     width: 40%;
+    min-width: 350px;
 }
 
 .flex-dan-img {
@@ -124,7 +126,7 @@ h2, h3 {
 
 #portfolio h2 {
     color: #DA7F8F;
-    padding: 40px 0 20px 0;
+    padding: 60px 0 20px 0;
     /* font-size: 20px;
     font-weight: 300; */
     text-align: center;
@@ -205,6 +207,7 @@ h2, h3 {
 #footer div p {
     width: 100%;
     display: inline-block;
+    color: white;
 }
 
 #footer ul li {
@@ -217,7 +220,7 @@ h2, h3 {
 2. Ensure spacing/padding/margin in about section is consistent
 3. Sort out media query for About Me section - have the text and then img below or above the text. Perhaps have
 the technologies you list a different colour to the rest - e.g. orange or something.
-4. Footer
+4. Footer - change twitter icon to email
 5. Contact? Perhaps just have icons in your footer, see milner's website. Have email, git, linkedin.
 6. Hamburger icon
 7. Tidyup/Refactor html & css
