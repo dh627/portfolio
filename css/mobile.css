@@ -16,7 +16,7 @@
         text-align: right;
     }
 
-    .burger-menu {
+    a, a .burger-menu {
         display: inline-block;
         width: 25px;
         height: 25px;
@@ -29,18 +29,14 @@
     #hero .hero-content {
         padding-top: 90px;
     }
-/*
-    .experience {
-        display: none;
-    } */
 
     .flex-dan-img {
         margin-right: 0px;
     }
 
     .about-container p {
+        padding: 0px 20px 0px 30px;
         margin-top: 50px;
-        margin-left: 40px;
     }
 
     .about-text {
@@ -61,5 +57,11 @@
 
     .showcase-flex-container a {
         width: 70%;
+    }
+}
+
+@media(max-width: 321px) {
+    .about-container p {
+        min-width: 320px;
     }
 }

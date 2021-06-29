@@ -18,12 +18,12 @@
                 <li><a href="#" class="myLink">Home</a></li>
                 <li><a href="#about" class="myLink">About</a></li>
                 <li><a href="#portfolio" class="myLink">Portfolio</a></li>
-                <li><a href="#" class="myLink">Contact</a></li>
+                <li><a href="#footer" class="myLink">Contact</a></li>
             </ul>
-            <img class="burger-menu" src="images/burger-menu.png" alt="burger-menu">
-            <!-- <a href="#" class="hamburger-icon"><i class="fa fa-bars"></i></a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img class="burger-menu" src="images/burger-menu.png" alt="burger-menu">
+            </a>
         </nav>
-
         <div id="hero">
             <div class="container">
                 <div class="hero-content">
@@ -44,48 +44,6 @@
                         technologies such as Node.js, Nest.js, TypeORM, MySQL and MongoDB.
                     I enjoy working on fullstack projects and have a growing passion for data and data visualisation.</p>
             </div>
-
-
-            <!-- <div class="about">
-                <img class="dan-img" src="images/dan.jpg" alt="">
-                <p>Hey! I'm Dan, a Software Developer from the United Kingdom.<br>
-                I am experienced in working with frontend technologies such as HTML, CSS, JavaScript, React.js & Meteor.js, backend
-                    technologies such as Node.js, Nest.js, TypeORM, MySQL and MongoDB.<br>
-                I enjoy working on fullstack projects and have a growing passion for data and data visualisation.</p>
-
-            </div> -->
-            <!-- <h2>About Me</h2>
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Nest.js</li>
-                    <li>Python</li>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>TypeORM</li>
-                </ul>
-            </div>
-            <img class="dan-img" src="images/dan.jpg" alt="">
-            <div class="experience">
-                <h3>Experience</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Nest.js</li>
-                    <li>Python</li>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>TypeORM</li>
-                </ul>
-            </div> -->
         </div>
         <hr>
         <section id="portfolio">
@@ -107,10 +65,6 @@
         </section>
     </section>
 
-    <section id="contact">
-
-    </section>
-
     <footer id="footer">
         <div>
             <ul>
@@ -121,6 +75,13 @@
             <p>Made with love in Cardiff, United Kingdom</p>
         </div>
     </footer>
+
+<script>
+    function myFunction() {
+        console.log("Hello");
+        let x = document.getElementById("mobileNavLinks")
+    }
+</script>
 
 </body>
 </html>
