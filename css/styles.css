@@ -18,6 +18,11 @@ hr {
     display: none;
 }
 
+.burger-link {
+    border: none;
+    background-color: transparent;
+}
+
 .burger-link, .burger-menu {
     display: none;
 }
