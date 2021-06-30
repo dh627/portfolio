@@ -30,6 +30,16 @@
         opacity: 0.7;
     }
 
+    header {
+        position: relative;
+    }
+
+    #mobileNavLinks.showMobileNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
     .burger-link, .burger-menu {
         display: inline-block;
         width: 25px;
