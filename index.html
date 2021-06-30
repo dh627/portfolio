@@ -24,6 +24,12 @@
                 <img class="burger-menu" src="images/burger-menu.png" alt="burger-menu">
             </a>
         </nav>
+        <div id="mobileNavLinks">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#footer">Contact</a>
+        </div>
         <div id="hero">
             <div class="container">
                 <div class="hero-content">
@@ -75,13 +81,22 @@
             <p>Made with love in Cardiff, United Kingdom</p>
         </div>
     </footer>
-
+</body>
 <script>
     function myFunction() {
-        console.log("Hello");
-        let x = document.getElementById("mobileNavLinks")
+        let mobileNav = document.getElementById("mobileNavLinks");
+        if (mobileNav.style.display === "block") {
+            mobileNav.style.display = "none";
+        } else {
+            mobileNav.style.display = "block";
+        }
+    }
+
+    window.onresize = function() {
+        let mobileNav = document.getElementById("mobileNavLinks");
+        if (mobileNav.style.display === "block" && window.innerWidth > 533) {
+            mobileNav.style.display = "none";
+        }
     }
 </script>
-
-</body>
 </html>
